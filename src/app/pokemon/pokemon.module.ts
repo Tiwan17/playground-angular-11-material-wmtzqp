@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { PokemonFormComponent } from './pokemon-form/pokemon-form.component';
+import { EditPokemonComponent } from './edit-pokemon/edit-pokemon.component';
 
 import { BorderCardDirective } from './border-card.directive';
 import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
@@ -21,6 +22,8 @@ const pokemonRoutes: Routes = [
     PokemonTypeColorPipe,
     ListPokemonComponent,
     DetailPokemonComponent,
+    PokemonFormComponent,
+    EditPokemonComponent,
   ],
   imports: [CommonModule, FormsModule, RouterModule.forChild(pokemonRoutes)],
   providers: [PokemonService],
