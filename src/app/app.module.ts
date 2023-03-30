@@ -23,6 +23,7 @@ import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.componen
     PokemonTypeColorPipe,
     ListPokemonComponent,
     DetailPokemonComponent,
+    AppRoutingModule,
   ],
   bootstrap: [AppComponent],
 })
