@@ -13,12 +13,12 @@ import { PokemonModule } from './pokemon/pokemon.module';
 
 @NgModule({
   imports: [
+    PokemonModule,
     BrowserModule,
     FormsModule,
     MatButtonModule,
     MatTooltipModule,
     AppRoutingModule,
-    PokemonModule,
   ],
   declarations: [
     AppComponent,
