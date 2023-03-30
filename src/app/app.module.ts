@@ -14,7 +14,13 @@ import { ListPokemonComponent } from './list-pokemon/list-pokemon.component';
 import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, MatButtonModule, MatTooltipModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    MatButtonModule,
+    MatTooltipModule,
+    AppRoutingModule,
+  ],
   declarations: [
     AppComponent,
     PageHeadingComponent,
@@ -23,7 +29,6 @@ import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.componen
     PokemonTypeColorPipe,
     ListPokemonComponent,
     DetailPokemonComponent,
-    AppRoutingModule,
   ],
   bootstrap: [AppComponent],
 })
