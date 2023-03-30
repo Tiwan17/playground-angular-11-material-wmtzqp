@@ -13,8 +13,9 @@ import { PokemonModule } from './pokemon/pokemon.module';
 
 @NgModule({
   imports: [
-    PokemonModule,
     BrowserModule,
+    FormsModule,
+    PokemonModule,
     FormsModule,
     MatButtonModule,
     MatTooltipModule,
