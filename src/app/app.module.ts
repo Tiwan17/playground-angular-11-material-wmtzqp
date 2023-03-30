@@ -8,10 +8,8 @@ import { PageHeadingComponent } from './page-heading/page-heading.component';
 import { TimeDurationPipe } from './timeDuration.pipe';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { BorderCardDirective } from './border-card.directive';
-import { PokemonTypeColorPipe } from './pokemon-type-color.pipe';
-import { ListPokemonComponent } from './list-pokemon/list-pokemon.component';
-import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PokemonModule } from './pokemon/pokemon.module';
 
 @NgModule({
   imports: [
@@ -20,15 +18,13 @@ import { DetailPokemonComponent } from './detail-pokemon/detail-pokemon.componen
     MatButtonModule,
     MatTooltipModule,
     AppRoutingModule,
+    PokemonModule,
   ],
   declarations: [
     AppComponent,
     PageHeadingComponent,
     TimeDurationPipe,
-    BorderCardDirective,
-    PokemonTypeColorPipe,
-    ListPokemonComponent,
-    DetailPokemonComponent,
+    PageNotFoundComponent,
   ],
   bootstrap: [AppComponent],
 })
