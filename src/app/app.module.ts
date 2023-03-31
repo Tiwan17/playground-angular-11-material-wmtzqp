@@ -12,7 +12,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PokemonModule } from './pokemon/pokemon.module';
-import { InMemoryDataService } from './in-memory-data.service';
 
 @NgModule({
   imports: [
