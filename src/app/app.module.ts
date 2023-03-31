@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HttpClientModuleInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,9 +17,6 @@ import { PokemonModule } from './pokemon/pokemon.module';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    HttpClientModuleInMemoryWebApiModule.forRoot(InMemoryDataService, {
-      data: false,
-    }),
     PokemonModule,
     FormsModule,
     MatButtonModule,
